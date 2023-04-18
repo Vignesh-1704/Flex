@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* Base Styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; /* setting up font size to 62.5% changes 1rem = 10px */
+    color: whitesmoke;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif; /* poppins as font family if it is not supported it will use san-serif*/
+}
+
+a{
+    text-decoration: none; /* removes the underline from the hyperlink */
+    font-weight: 400;  /* 400 Normal */
+    font-size: 1.6rem; /* 1.6 rem = 16px */
+}
+
+h1,h2,p{
+    margin: 1.6rem 0;  /* top & Bottom 16px | Left and right 0 */
+}
+
+h1{
+    font-weight: 800; /* 800 Bold */
+    font-size: 3.2rem; /* 32px */
+}
+
+h2{
+    font-weight: 800; /* 800 Bold */
+    font-size: 2.4rem; /* 24px */
+}
+
+p{
+    font-weight: 400;
+    font-size: 1.8rem; /* 18px */
+}
+
+img{
+    width: 100%;
+    height: auto; /* makes the image responsive and image fits into the container */
+}
+
+/* Utility Classes */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto; /* takes it to center */
+}
+
+/* section{
+    padding: 100% 0;
+} */
+
+/* Header Section / Hero Section Styling */
+
+
+header{
+    height: 100vh; /* Takes up the entire screen */
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)) , url('images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+
+
+.logo{
+    font-size: 3.2rem;
+    margin: 0;
+}
+
+nav{
+    padding: 3% 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 5rem;
+    height: 5rem;
+    display: inline-block;
+}
+
+.logo h1{
+    color: red;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 2.5rem;
+}
+
+nav ul li a:hover{
+    color: red;
+    transition: .5s ease-in-out;
+}
+
+.header-content{
+    width: 50%;
+    position: relative;
+    top: 16%;
+    left: 7%;
+}
+
+form{
+    margin: 2.4rem 0;
+}
+
+input{
+    font-size: 1.8rem;
+}
+
+input[type=text],input[type=email]
+{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 1.2rem 0;
+    display: block;
+    border: 1px solid #ccc;
+    color: grey;
+}
+
+input[type=submit]
+{
+    width: 50%;
+    background-color: red;
+    color: whitesmoke;
+    padding: 6px 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+}
+
+
+/* About Section Styling */
+
